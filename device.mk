@@ -55,7 +55,28 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+<<<<<<< HEAD
     Snap
+<<<<<<< HEAD
+=======
+    
+# GPS
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/gps/apdr.conf:system/etc/apdr.conf \
+    $(LOCAL_PATH)/gps/flp.conf:system/etc/flp.conf \
+    $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf \
+    $(LOCAL_PATH)/gps/izat.conf:system/etc/izat.conf \
+    $(LOCAL_PATH)/gps/lowi.conf:system/etc/lowi.conf \
+    $(LOCAL_PATH)/gps/sap.conf:system/etc/sap.conf \
+    $(LOCAL_PATH)/gps/xtwifi.conf:system/etc/xtwifi.con
+=======
+    android.hardware.camera.provider@2.4-impl \
+    android.hardware.camera.provider@2.4-service \
+    libgui_vendor \
+    libstdc++.vendor \
+    GCam
+>>>>>>> c2ee90f... onclite: Include Gcam Go
+>>>>>>> e1c9857... onclite: Include Gcam Go
 
 # Display
 PRODUCT_PACKAGES += \
