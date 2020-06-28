@@ -141,7 +141,26 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_COPY_FILES += \
+<<<<<<< HEAD
     frameworks/native/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml
+=======
+    $(DEVICE_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
+
+# Recorder
+PRODUCT_PACKAGES += \
+    KimciRecorder
+
+# QMI
+PRODUCT_PACKAGES += \
+    libjson
+
+# RCS
+PRODUCT_PACKAGES += \
+    rcs_service_aidl \
+    rcs_service_aidl.xml \
+    rcs_service_api \
+    rcs_service_api.xml
+>>>>>>> 9e98796f... platina: add prebuilts kimcirecorder
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
