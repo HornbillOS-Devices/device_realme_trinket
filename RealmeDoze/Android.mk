@@ -27,8 +27,12 @@ LOCAL_STATIC_ANDROID_LIBRARIES := \
     androidx.preference_preference \
     androidx.recyclerview_recyclerview
 
+<<<<<<< HEAD:RealmeParts/Android.mk
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
 LOCAL_PACKAGE_NAME := RealmeParts
+=======
+LOCAL_PACKAGE_NAME := RealmeDoze
+>>>>>>> 5839213f... RMX1801: RealmeParts -> RealmeDoze:RealmeDoze/Android.mk
 LOCAL_CERTIFICATE := platform
 LOCAL_PRIVILEGED_MODULE := true
 
