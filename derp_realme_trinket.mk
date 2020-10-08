@@ -26,3 +26,10 @@ PRODUCT_NAME := derp_realme_trinket
 BUILD_FINGERPRINT := "trinket-user-10-QKQ1.200209.002--release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-realme
+
+#WithGAPPS
+#TARGET_GAPPS_ARCH := arm64
+#TARGET_INCLUDE_GAPPS := true
+
+#unecessary thingy
+IS_PHONE := true
