@@ -94,6 +94,9 @@ TARGET_USES_HWC2 := true
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
+# DT2W
+TARGET_TAP_TO_WAKE_NODE := "/sys/android_touch/doubletap2wake"
+
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
@@ -147,6 +150,9 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
     device/qcom/sepolicy/generic/public \
     device/qcom/sepolicy/qva/public
+
+# Enable real time lockscreen charging current values
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 
 # Power
 TARGET_USES_INTERACTION_BOOST := true
