@@ -6,7 +6,7 @@
 
 $(call inherit-product, device/realme/realme_trinket/device.mk)
 
-# Inherit some common Aosip stuff.
+# Inherit some common Aosp stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Setup Gapps options
