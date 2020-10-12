@@ -1,36 +1,3 @@
-# Audio
-af.fast_track_multiplier=1
-vendor.audio_hal.period_size=192
-audio.deep_buffer.media=true
-vendor.audio.dolby.ds2.enabled=true
-vendor.audio.offload.buffer.size.kb=64
-vendor.audio.offload.gapless.enabled=true
-audio.offload.min.duration.secs=30
-vendor.audio.offload.multiple.enabled=false
-vendor.audio.offload.track.enable=false
-vendor.audio.playback.mch.downsample=true
-vendor.audio.safx.pbe.enabled=true
-persist.audio.dirac.speaker=true
-persist.vendor.audio.fluence.speaker=true
-persist.vendor.audio.fluence.voicecall=true
-persist.vendor.audio.hw.binder.size_kbyte=1024
-ro.vendor.qc.sdk.audio.fluencetype=fluence
-ro.vendor.qc.sdk.audio.ssr=false
-vendor.audio.tunnel.encode=false
-vendor.voice.path.for.pcm.voip=true
-vendor.voice.conc.fallbackpath=deep-buffer
-vendor.voice.playback.conc.disabled=true
-vendor.voice.record.conc.disabled=false
-audio.offload.disable=0
-audio.offload.pcm.16bit.enable=true
-audio.offload.pcm.24bit.enable=true
-audio.offload.video=true
-persist.vendor.audio.fluence.audiorec=false
-persist.audio.fluence.spk.mono=true
-persist.vendor.audio.fluence.voicerec=false
-vendor.voice.voip.conc.disabled=true
-audio.offload.multiaac.enable=true
-
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.bt.a2dp.aac_whitelist=false \
