@@ -80,6 +80,8 @@ TARGET_USES_QTI_CAMERA_DEVICE := true
 
 # Charger Mode
 BOARD_CHARGER_ENABLE_SUSPEND := true
+BOARD_CHARGER_DISABLE_INIT_BLANK := true
+HEALTHD_USE_BATTERY_INFO := true
 
 # Dex
 ifeq ($(HOST_OS),linux)
@@ -95,7 +97,7 @@ TARGET_USES_HWC2 := true
 TARGET_ENABLE_MEDIADRM_64 := true
 
 # DT2W
-TARGET_TAP_TO_WAKE_NODE := "/sys/android_touch/doubletap2wake"
+TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/wake_gesture"
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
@@ -146,6 +148,7 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
     $(DEVICE_PATH)/sepolicy/private \
     device/qcom/sepolicy/generic/private \
     device/qcom/sepolicy/qva/private
+SELINUX_IGNORE_NEVERALLOWS := true
 
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
     device/qcom/sepolicy/generic/public \
