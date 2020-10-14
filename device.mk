@@ -66,14 +66,7 @@ PRODUCT_PACKAGES += \
     libdisplayconfig \
     libqdMetaData \
     libqdMetaData.system \
-<<<<<<< HEAD
     libvulkan
-=======
-    libtinyxml \
-    libvulkan \
-    memtrack.sdm660 \
-    vendor.display.config@1.5 \
-    vendor.display.config@1.3.vendor
 
 # Doze
 PRODUCT_PACKAGES += \
@@ -84,7 +77,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.2-service.clearkey
->>>>>>> 5839213f... RMX1801: RealmeParts -> RealmeDoze
 
 # Fingerprint
 PRODUCT_PACKAGES += \
