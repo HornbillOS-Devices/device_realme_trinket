@@ -35,11 +35,10 @@ PRODUCT_GMS_CLIENTID_BASE := android-realme
 #WithGAPPS
 #TARGET_GAPPS_ARCH := arm64
 #TARGET_INCLUDE_GAPPS := true
+IS_PHONE := true
 
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-#unecessary thingy
-IS_PHONE := true
 
 #Build.prop
 #
