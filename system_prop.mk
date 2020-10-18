@@ -39,6 +39,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg \
     ro.vendor.display.sensortype=2
 
+# Liquid Smooth Ui
+persist.service.lgospd.enable=0
+persist.service.pcsync.enable=0
+touch.presure.scale=0.001
+system_smooth_lcd=100%
+Faster_system_multitasking=2x
+
 # Higher fling velocities for smooth scrolling and to provide better responsiveness - From HalogenOS Team
 ro.min.fling_velocity=140
 ro.max.fling_velocity=40000
