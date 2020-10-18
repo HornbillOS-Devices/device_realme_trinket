@@ -143,4 +143,4 @@ persist.sys.wfd.virtual=0
 persist.service.zram=0
 ro.zram.default=0
 
-# end of device/Realme/realme_trinket/system.prop
+# end of device/realme/realme_trinket/system.prop
