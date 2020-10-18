@@ -73,8 +73,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.oem.otg_support=true
 
-# Ram Managemant
+#Ram Managemant
 ro.config.hw_fast_dormancy=1
+
+#Enable Zygote Preforking
+persist.device_config.runtime_native.usap_pool_enabled=true
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -110,7 +113,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.ssr.restart_level=ALL_ENABLE
 
-# SurfaceFlinger
+#SurfaceFlinger Boost
 debug.sf.disable_backpressure=1
 debug.sf.early_phase_offset_ns=1500000
 debug.sf.early_app_phase_offset_ns=1500000
@@ -124,6 +127,8 @@ ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.max_virtual_display_dimension=4096
 ro.surface_flinger.vsync_event_phase_offset_ns=2000000
 ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
+ro.min.fling_velocity=140
+ro.max.fling_velocity=40000
 
 # USB debugging
 PRODUCT_PROPERTY_OVERRIDES += \
