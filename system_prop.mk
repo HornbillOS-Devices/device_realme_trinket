@@ -1,3 +1,9 @@
+# Audio
+audio.offload.min.duration.secs=30
+audio.offload.video=true
+audio.deep_buffer.media=true
+ro.af.client_heap_size_kbyte=7168
+
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.bt.a2dp.aac_whitelist=false \
@@ -85,6 +91,35 @@ ro.config.hw_fast_dormancy=1
 
 #Enable Zygote Preforking
 persist.device_config.runtime_native.usap_pool_enabled=true
+
+# Radio
+DEVICE_PROVISIONED=1
+persist.data.df.dev_name=rmnet_usb0
+persist.debug.coresight.config=stm-events
+persist.radio.VT_CAM_INTERFACE=2
+persist.radio.multisim.config=dsds
+persist.timed.enable=true
+persist.sys.fflag.override.settings_network_and_internet_v2=true
+persist.vendor.qti.telephony.vt_cam_interface=1
+persist.vendor.radio.atfwd.start=true
+persist.vendor.iwlan.enable=true
+persist.vendor.data.iwlan.enable=true
+persist.vendor.cne.feature=1
+persist.vendor.data.mode=concurrent
+persist.vendor.radio.procedure_bytes=SKIP
+persist.vendor.radio.apm_sim_not_pwdn=1
+persist.vendor.radio.sib16_support=1
+persist.vendor.radio.custom_ecc=1
+persist.vendor.radio.rat_on=combine
+persist.vendor.radio.data_con_rprt=1
+persist.vendor.radio.enable_temp_dds=true
+ril.subscription.types=NV,RUIM
+ro.telephony.default_network=22,22
+ro.vendor.use_data_netmgrd=true
+ro.telephony.use_old_mnc_mcc_format=true
+ro.telephony.iwlan_operation_mode=legacy
+telephony.lteOnCdmaDevice=1
+vendor.rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
