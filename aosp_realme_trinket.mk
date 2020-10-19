@@ -32,13 +32,7 @@ BUILD_FINGERPRINT := "trinket-user-10-QKQ1.200209.002--release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-realme
 
-#WithGAPPS
-#TARGET_GAPPS_ARCH := arm64
-#TARGET_INCLUDE_GAPPS := true
-IS_PHONE := true
-
 TARGET_FACE_UNLOCK_SUPPORTED := true
-
 
 #Build.prop
 #
