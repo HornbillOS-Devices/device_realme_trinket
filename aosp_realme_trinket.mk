@@ -31,7 +31,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-realme
 
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-#Build.prop
+# Build.prop
 #
 # from device/realme/realme_trinket/system.prop
 #
