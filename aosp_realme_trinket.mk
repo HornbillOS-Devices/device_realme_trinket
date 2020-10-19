@@ -30,7 +30,7 @@ BUILD_FINGERPRINT := "trinket-user-10-QKQ1.200209.002--release-keys"
 PRODUCT_GMS_CLIENTID_BASE := android-realme
 
 # Face Unlock
-$(call inherit-product-if-exist, external/motorola/faceunlock/comfig.mk)
+$(call inherit-product-if-exist, external/motorola/faceunlock/config.mk)
 TARGET_FACE_UNLOCK_SUPPORTED := true)
 ifneq ($(TARGET_DISABLE_ALTERNATIVE_FACE_UNLOCK), true)
 PRODUCT_PACKAGES += \
