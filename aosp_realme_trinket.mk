@@ -29,7 +29,15 @@ BUILD_FINGERPRINT := "trinket-user-10-QKQ1.200209.002--release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-realme
 
+# Face Unlock
+$(call inherit-product, TARGET_FACE_UNLOCK_SUPPORTED := true)
+ifneq ($(TARGET_DISABLE_ALTERNATIVE_FACE_UNLOCK), true)
+PRODUCT_PACKAGES += \
+    FaceUnlockService
 TARGET_FACE_UNLOCK_SUPPORTED := true
+endif
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.face.moto_unlock_service=$(TARGET_FACE_UNLOCK_SUPPORTED)
 
 # Build.prop
 #
