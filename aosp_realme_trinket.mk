@@ -6,14 +6,13 @@
 
 $(call inherit-product, device/realme/realme_trinket/device.mk)
 
-# Inherit some common Aosp stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-
-# Setup Gapps options
+# GAPPS
 IS_PHONE := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := Realme
