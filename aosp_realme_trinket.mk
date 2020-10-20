@@ -20,11 +20,6 @@ PRODUCT_DEVICE := realme_trinket
 PRODUCT_MANUFACTURER := Realme
 PRODUCT_NAME := aosp_realme_trinket
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="realme_trinket" \
-    TARGET_DEVICE="realme_trinket" \
-    DEVICE_MAINTAINERS="XNXXGANG"
-
 BUILD_FINGERPRINT := "trinket-user-10-QKQ1.200209.002--release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-realme
