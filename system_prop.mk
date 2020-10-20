@@ -1,9 +1,3 @@
-# Audio
-audio.offload.min.duration.secs=30
-audio.offload.video=true
-audio.deep_buffer.media=true
-ro.af.client_heap_size_kbyte=7168
-
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.bt.a2dp.aac_whitelist=false \
