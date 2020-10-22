@@ -20,7 +20,7 @@ PRODUCT_DEVICE := realme_trinket
 PRODUCT_MANUFACTURER := Realme
 PRODUCT_NAME := aosp_realme_trinket
 
-BUILD_FINGERPRINT := "trinket-user-10-QKQ1.200209.002--release-keys"
+BUILD_FINGERPRINT := "google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-realme
 
