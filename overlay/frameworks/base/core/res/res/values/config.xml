@@ -525,6 +525,10 @@
      <!-- Fast brightness animation ramp rate in brightness units per second-->
      <integer name="config_brightness_ramp_rate_fast">180</integer>
 
+    <!-- Whether to artificially interpret all signal strengths as
+         one bar higher than they actually are -->
+    <bool name="config_inflateSignalStrength">true</bool>
+
      <!-- Slow brightness animation ramp rate in brightness units per second-->
      <integer name="config_brightness_ramp_rate_slow">60</integer>
 </resources>
