@@ -4,8 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-$(call inherit-product, device/realme/realme_trinket/device.mk)
-
 # GAPPS
 IS_PHONE := true
 TARGET_BOOT_ANIMATION_RES := 1080
