@@ -12,6 +12,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
+$(call inherit-product, device/realme/realme_trinket/device.mk)
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Face Unlock
