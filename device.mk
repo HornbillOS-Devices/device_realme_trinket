@@ -84,6 +84,10 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.2-service.clearkey
 
+#Face  detection extension
+PRODUCT_PACKAGES += \
+    org.codeaurora.camera
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.realme_trinket
