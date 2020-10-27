@@ -185,6 +185,14 @@ persist.dbg.wfc_avail_ovr=1
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.va_aosp.support=1
 
+#YT 
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.display-size=3840x2160
+
 # Zram
 persist.service.zram=0
 ro.zram.default=0
+
+# Zygote preforking
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.device_config.runtime_native.usap_pool_enabled=true
