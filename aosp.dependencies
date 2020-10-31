@@ -1,0 +1,12 @@
+[
+ {
+   "repository": "hornbillos/vendor_realme_reapme_trinket",
+   "target_path": "vendor/realme/realme_trinket",
+   "branch": "ten",
+},
+ {
+   "repository": "HornbillOS-Devices/device_realme_realme_trinket",
+   "target_path": "device/realme/realme_trinket",
+   "branch": "ten"
+ },
+]
