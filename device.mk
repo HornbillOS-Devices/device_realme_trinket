@@ -152,10 +152,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml
 
-# Recorder
-PRODUCT_PACKAGES += \
-    KimciRecorder
-
 # QMI
 PRODUCT_PACKAGES += \
     libjson
